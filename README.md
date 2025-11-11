@@ -68,3 +68,49 @@ Before installing dependencies, it’s best to create a Python virtual environme
     Flask>=2.0
     yt-dlp>=2023.0.0
 ```
+
+## 🧩 Easiest Solution — Manual FFmpeg Installation (No Admin Required!)
+
+Follow these quick steps 👇
+
+### 🪜 Step 1: Download FFmpeg
+
+1. Go to 👉 [https://www.gyan.dev/ffmpeg/builds/](https://www.gyan.dev/ffmpeg/builds/)
+2. Click **"ffmpeg-release-essentials.zip"** (around 75 MB)
+3. Download and extract the ZIP file
+
+---
+
+### 🪜 Step 2: Place FFmpeg in Your Project
+
+1. After extracting, you’ll see a folder like:
+```
+    ffmpeg-7.x-essentials_build
+```
+
+2. Open that folder → go into the `bin` directory  
+3. Copy these three files:
+```
+    ffmpeg.exe
+    ffplay.exe
+    ffprobe.exe
+```
+
+4. Paste them directly in your **project folder (same folder as `app.py`)**
+
+✅ That’s it — no admin rights, no PATH setup required!
+
+---
+
+> 💡 **Tip:** Once copied, your project folder should look like this:
+> ```
+> youtube-downloader-flask-yt-dlp/
+> ├── app.py
+> ├── ffmpeg.exe
+> ├── ffplay.exe
+> ├── ffprobe.exe
+> ├── requirements.txt
+> ├── README.md
+> └── downloads/
+> ```
+      
