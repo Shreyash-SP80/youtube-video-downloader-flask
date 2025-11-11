@@ -1,43 +1,56 @@
-# YouTube Downloader — Flask + yt-dlp
+# 🎬 YouTube Downloader — Flask + yt-dlp
 
-A lightweight Flask web application that lets you download YouTube videos and audio using `yt-dlp`.  
-Includes a modern single-page UI, multiple quality options, and optional FFmpeg support for merging video+audio and exporting MP3 audio.
-
-> NOTE: This tool downloads content from YouTube for personal use. Respect YouTube's Terms of Service and copyright law. Do not download content you do not have the right to download.
+A modern, easy-to-use **YouTube video and audio downloader** built with **Flask** and **yt-dlp**.  
+No setup hassle — just run locally and download videos in multiple qualities, with or without FFmpeg.
 
 ---
 
-## Features
+## 🚀 Features
 
-- Paste a YouTube URL and download:
-  - Best available single-file MP4 (no FFmpeg required)
-  - Best quality (video + audio merged) — requires FFmpeg
-  - Specific resolutions (1080p, 720p, 480p, 360p)
-  - Audio-only MP3 conversion — requires FFmpeg
-- Frontend shows FFmpeg availability and disables/annotates options accordingly
-- Simple `/download` API that returns filename and triggers browser download
-- Downloads are stored in a `downloads/` folder
-
----
-
-## Repository name
-`youtube-downloader-flask-yt-dlp`
+- 🎥 Download YouTube videos in multiple qualities:
+  - 1080p / 720p / 480p / 360p
+  - Best available (auto-detect)
+  - Audio-only (MP3)
+- ⚙️ Works even without FFmpeg (basic quality)
+- 🧠 Automatically detects if FFmpeg is available
+- 🌈 Beautiful modern UI with loading spinner, quality hints, and error messages
+- 🗂️ Downloads stored locally in a `downloads/` folder
 
 ---
 
-## Quick Start (local)
+## 📦 Repository name
+```
+    youtube-downloader-flask-yt-dlp
+```
 
-### Requirements
-- Python 3.8+
-- `ffmpeg` (optional — required for merging and mp3 conversion)
+## 📝 Short Description
+A Flask web app that uses yt-dlp to download YouTube videos and audio with FFmpeg support and a clean, modern interface.
+
+
+---
+
+## 🧰 Requirements
+
+- Python 3.8 or newer
 - `pip`
+- (Optional but recommended) FFmpeg
 
-### Install dependencies
-Create a virtual environment (recommended):
+---
+
+## 🪄 Quick Setup
+
+### 1️⃣ Clone or download this repository
 
 ```bash
+git clone https://github.com/<your-username>/youtube-downloader-flask-yt-dlp.git
+cd youtube-downloader-flask-yt-dlp
+```
+
+## 🪄 2️⃣ Create a Virtual Environment (Recommended)
+
+Before installing dependencies, it’s best to create a Python virtual environment.
+
+```bash
+# Create a virtual environment named 'venv'
 python -m venv venv
-# macOS / Linux
-source venv/bin/activate
-# Windows (PowerShell)
-.\venv\Scripts\Activate.ps1
+```
