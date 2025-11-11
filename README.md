@@ -1,7 +1,7 @@
 # 🎬 YouTube Downloader — Flask + yt-dlp
 
 A modern, easy-to-use **YouTube video and audio downloader** built with **Flask** and **yt-dlp**.  
-No setup hassle — just run locally and download videos in multiple qualities, with or without FFmpeg.
+No setup hassle — just run locally and download videos in multiple qualities, with or without FFmpeg. 
 
 ---
 
