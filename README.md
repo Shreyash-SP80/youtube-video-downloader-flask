@@ -42,15 +42,29 @@ A Flask web app that uses yt-dlp to download YouTube videos and audio with FFmpe
 ### 1️⃣ Clone or download this repository
 
 ```bash
-git clone https://github.com/<your-username>/youtube-downloader-flask-yt-dlp.git
-cd youtube-downloader-flask-yt-dlp
+    git clone https://github.com/<your-username>/youtube-downloader-flask-yt-dlp.git
+    cd youtube-downloader-flask-yt-dlp
 ```
 
-## 🪄 2️⃣ Create a Virtual Environment (Recommended)
+## 2️⃣ Create a virtual environment (recommended)
 
 Before installing dependencies, it’s best to create a Python virtual environment.
 
 ```bash
-# Create a virtual environment named 'venv'
-python -m venv venv
+    python -m venv venv
+    # Windows PowerShell
+    .\venv\Scripts\Activate.ps1
+    # or Command Prompt
+    venv\Scripts\activate
+```
+
+## 3️⃣ Install dependencies
+```
+    pip install -r requirements.txt
+```
+
+## 📄 requirements.txt
+```
+    Flask>=2.0
+    yt-dlp>=2023.0.0
 ```
