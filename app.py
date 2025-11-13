@@ -335,6 +335,12 @@ def download_video():
         
         if not url:
             return jsonify({'error': 'URL is required'}), 400
+            
+        # .message.error {
+        #     background-color: #f8d7da;
+        #     color: #721c24;
+        #     border: 1px solid #f5c6cb;
+        # }
         
         # Check if FFmpeg is required and available
         requires_ffmpeg = quality in ['best', '1080p', '720p', 'audio']
@@ -417,4 +423,5 @@ if __name__ == '__main__':
     print("=" * 50)
     print("Server starting at http://localhost:5000")
     print("=" * 50)
+
     app.run(debug=True, port=5000);
