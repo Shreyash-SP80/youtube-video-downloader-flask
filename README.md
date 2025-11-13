@@ -32,7 +32,7 @@ A Flask web app that uses yt-dlp to download YouTube videos and audio with FFmpe
 ## 🧰 Requirements
 
 - Python 3.8 or newer
-- `pip`
+- `pip` 
 - (Optional but recommended) FFmpeg 
 
 ---
