@@ -67,7 +67,7 @@ Before installing dependencies, it’s best to create a Python virtual environme
 ```
     Flask>=2.0
     yt-dlp>=2023.0.0
-```
+``` 
 
 ## 🧩 Easiest Solution — Manual FFmpeg Installation (No Admin Required!)
 
